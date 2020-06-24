@@ -1,0 +1,26 @@
+[user]
+  name = Melanie Mohn
+  email = melaniemohn@gmail.com
+[core]
+  editor = ~/bin/subl -w
+  excludesfile = ~/.gitignore_global
+[log]
+  decorate = short
+[tag]
+  sort = version:refname
+[help]
+  autocorrect = 10
+[alias]
+  b = !git branch
+  br = !git branch
+  ch = !git checkout
+  co = !git checkout
+  find = "!f(){ git branch -r | grep "${1}"; }; f"
+  fix = !git add -u && git commit -m "Fixup"
+  housekeep = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+  lo = !git log --oneline
+  ls = !git log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\"
+  pb = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\""
+  pf = !git push --force-with-lease
+  undo = !git reset HEAD~1 --mixed
+  wip = !git add -u && git commit -m "[WIP]"
