@@ -1,0 +1,41 @@
+{
+  "always_show_minimap_viewport": false,
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Monokai-Aurora.tmTheme",
+  "ensure_newline_at_eof_on_save": true,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".hg",
+    "CVS",
+    "bin",
+    ".git-crypt",
+    "tmp",
+    "vendor",
+    ".git",
+    "coverage",
+    "log",
+    "node_modules",
+    "public/packs"
+  ],
+  "font_face": "Fira Code Medium",
+  "font_options":
+  [
+    "gray_antialias",
+    "dlig"
+  ],
+  "font_size": 13,
+  "git_gutter_enable": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "remember_open_files": true,
+  "save_on_focus_lost": true,
+  "show_full_path": true,
+  "show_minimap": false,
+  "spell_check": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+}
