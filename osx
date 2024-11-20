@@ -1,3 +1,14 @@
+# Install homebrew and bash-git-prompt
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/$USER/.zshrc
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# For some reason the .zshrc stuff above didn't work, so try this
+cd /opt/homebrew/bin/
+PATH=$PATH:/opt/homebrew/bin
+
+brew install bash-git-prompt
+
 # Show hidden files/folders
 defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
@@ -5,3 +16,10 @@ killall Finder
 # Use zsh as default shell and install oh-my-zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Powerline fonts to use with oh-my-zsh
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts

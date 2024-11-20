@@ -134,6 +134,8 @@ export PATH=/usr/local/bin:$PATH
 
 export PATH="/usr/local/sbin:$PATH"
 
+export PATH=$PATH:/opt/homebrew/bin
+
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 autoload -Uz compinit
