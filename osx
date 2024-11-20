@@ -1,3 +1,7 @@
 # Show hidden files/folders
 defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
+
+# Use zsh as default shell and install oh-my-zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
