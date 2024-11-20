@@ -4,6 +4,7 @@
 [core]
   editor = ~/bin/subl -w
   excludesfile = ~/.gitignore_global
+  pager = less -FRX
 [log]
   decorate = short
 [tag]
