@@ -45,6 +45,8 @@ ZSH_THEME="agnoster"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -84,9 +86,8 @@ export DEFAULT_USER=`whoami`
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  # export EDITOR='mvim'
-  export EDITOR="$(which subl 2>/dev/null || echo nano)"
-  export GIT_EDITOR="${EDITOR/subl/subl --wait}"
+  export EDITOR='subl -w'
+  export GIT_EDITOR="${EDITOR}"
   export VISUAL="${EDITOR}"
 fi
 
