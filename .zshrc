@@ -116,15 +116,8 @@ export PATH=/usr/local/bin:$PATH
 
 export PATH="/usr/local/sbin:$PATH"
 
-export PATH=LOCAL_PATH:$PATH # For AWS CLI tools
-
-# MPM: this was trying to source nvm.sh from /usr/local/Cellar/nvm/0.34.0/nvm.sh
-# source $(brew --prefix nvm)/nvm.sh
-source ~/.nvm/nvm.sh
-
 alias python='python3'
 alias pip='pip3'
-export PATH="/Users/melaniemohn/.ebcli-virtual-env/executables:$PATH"
 export PATH=/Users/melaniemohn/.pyenv/versions/3.7.2/bin:$PATH
 
 eval $(thefuck --alias)
