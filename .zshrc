@@ -115,9 +115,3 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=/usr/local/bin:$PATH
 
 export PATH="/usr/local/sbin:$PATH"
-
-alias python='python3'
-alias pip='pip3'
-export PATH=/Users/melaniemohn/.pyenv/versions/3.7.2/bin:$PATH
-
-eval $(thefuck --alias)
