@@ -119,3 +119,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+autoload -Uz compinit
+
+compinit
