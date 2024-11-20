@@ -91,6 +91,22 @@ else
   export VISUAL="${EDITOR}"
 fi
 
+# Custom git prompt
+# source ~/.git-completion.bash
+
+# Customize bash-git-prompt settings and then source it
+GIT_PROMPT_ONLY_IN_REPO=1 # Use the default prompt when not in a git repo.
+# GIT_PROMPT_FETCH_REMOTE_STATUS=0 # Avoid fetching remote status
+# GIT_PROMPT_SHOW_UPSTREAM=0 # Don't display upstream tracking branch
+GIT_SHOW_UNTRACKED_FILES=normal # Don't count untracked files (no, normal, all)
+# GIT_PROMPT_THEME=Solarized
+# GIT_PROMPT_THEME=Custom
+
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+fi
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
