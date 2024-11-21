@@ -7,6 +7,8 @@
   pager = less -FRX
 [log]
   decorate = short
+[push]
+  autoSetupRemote = true
 [tag]
   sort = version:refname
 [help]
